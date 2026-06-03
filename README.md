@@ -64,7 +64,7 @@ cd odysseus
 cp .env.example .env       # optional, but recommended for explicit defaults
 docker compose up -d --build
 ```
-Open `http://localhost:7000` when the containers are healthy. Docker Compose
+Open `http://localhost:7000/login` when the containers are healthy. Docker Compose
 binds the web UI to `127.0.0.1` by default. If the port is taken, set
 `APP_PORT=7001` in `.env` and recreate the container. Set `APP_BIND=0.0.0.0`
 only when you intentionally want LAN/reverse-proxy access.
